@@ -10,6 +10,7 @@ You can use detail pages.
 
 /detail => Detail Page
 
+Need "npm install" for root directory.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
