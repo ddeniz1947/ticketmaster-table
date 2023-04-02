@@ -1,0 +1,29 @@
+.detail-page-container {
+     max-width: 100%;
+}
+
+.detail-page-wrapper {
+  max-width: 80%;
+}
+
+
+.prince-range{
+    display: block;
+    padding-left: 3%;
+}
+
+
+.detail-header {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.detail-label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.detail-child-label {
+  font-size: 13px;
+  font-weight: 500;
+}

@@ -1,0 +1,8 @@
+<div class="search-input-wrapper flex row justify-start align-center">
+    <input id="search-box" class="search-input" type="text" #searchBox (keyup)="searchInput(searchBox.value)"
+        maxlength="50">
+    <button (click)="emitSearchValue()" class="search-button flex row justify-center align-center">
+            <span class="search-icon"></span>
+            <label class="search-box-label" for="search-box">Search</label>
+    </button>
+</div>

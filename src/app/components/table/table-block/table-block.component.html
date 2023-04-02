@@ -1,0 +1,22 @@
+<div class="table-wrapper">
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Date</th>
+            <th>Ticket Limit</th>
+            <th>Legal Age Enforced</th>
+        </tr>
+        <tr *ngFor="let event of events">
+            <td><a href="javascript:void(0)" (click)="routeToDetail(event)">{{event.name}}</a></td>
+            <td>{{event.type}}</td>
+            <td>{{event?.dates?.start?.localDate}}</td>
+            <td>{{event?.accessibility?.ticketLimit}}</td>
+            <td *ngIf="event?.ageRestrictions?.legalAgeEnforced == false else ageElse">No</td>
+            <ng-template #ageElse>
+                <td>Yes</td>
+            </ng-template>
+        </tr>
+
+    </table>
+</div>

@@ -1,0 +1,44 @@
+<div class="detail-page-container container flex col justify-center align-center">
+    <div class="detail-page-wrapper">
+        <br>
+        <h5 class="detail-header">{{detailData.name}}</h5>
+        <span><span class="detail-label">Legal Age Enforced :
+            </span>{{detailData?.ageRestrictions?.legalAgeEnforced}}</span>
+        <br>
+        <span><span class="detail-label"> Ticket Limit :</span>{{detailData?.accessibility?.ticketLimit}}</span>
+        <br>
+        <span><span class="detail-label"> Date :</span>{{detailData?.dates?.start?.localDate}}</span>
+        <br>
+        <span><span class="detail-label"> Time :</span>{{detailData?.dates?.start?.localTime}}</span>
+        <br>
+        <span>
+            <span class="detail-label"> Price Ranges :</span>
+            <br>
+            <span class="price-ranges" *ngFor="let priceRange of detailData?.priceRanges">
+                <span class="prince-range">
+                    <span class="detail-child-label">Type :</span> {{priceRange?.type}}
+                    <br>
+                    <span class="detail-child-label"> Currency :</span> {{priceRange?.currency}}
+                    <br>
+                    <span class="detail-child-label">Min :</span> {{priceRange?.min}} - <span
+                        class="detail-child-label">Max :</span> {{priceRange?.max}}
+                </span>
+            </span>
+        </span>
+        <span>
+            <span class="detail-label"> Adresses :</span>
+            <br>
+            <span class="price-ranges" *ngFor="let adress of detailData?._embedded?.venues">
+                <span class="prince-range">
+                    <span class="detail-child-label">Adress :</span> {{adress?.address?.line1}}
+                    <br>
+                    <span class="detail-child-label"> City :</span> {{adress?.city?.name}}
+                    <br>
+                    <span class="detail-child-label"> City :</span> {{adress?.country?.name}}
+                </span>
+            </span>
+        </span>
+        <span><span class="detail-label">Info: </span>{{detailData?.info}}</span>
+
+    </div>
+</div>
