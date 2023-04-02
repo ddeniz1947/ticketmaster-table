@@ -1,4 +1,16 @@
 # TicketmasterTable
+Angular Project with ticketmaster api.
+You can list and filter ticketmaster datas.
+You can use detail pages.
+
+# Routings
+/ => Home Page
+
+/home => Home Page
+
+/detail => Detail Page
+
+Need "npm install" for root directory.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
 
