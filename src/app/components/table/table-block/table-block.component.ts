@@ -16,7 +16,6 @@ export class TableBlockComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log(this.events);
   }
 
   routeToDetail(event: EventModel) {
