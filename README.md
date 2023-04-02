@@ -4,7 +4,10 @@ You can list and filter ticketmaster datas.
 You can use detail pages.
 
 # Routings
-/ and / home => Home Page
+/ => Home Page
+
+/home => Home Page
+
 /detail => Detail Page
 
 
